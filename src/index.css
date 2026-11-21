@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { @apply bg-cream text-ink font-body antialiased; overflow-x: hidden; }
+h1, h2, h3, h4 { @apply font-display; letter-spacing: -0.03em; }
+:focus-visible { outline: 3px solid #4864DD; outline-offset: 3px; border-radius: 8px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition: none !important; } }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 font-display font-semibold transition duration-300 hover:-translate-y-0.5 active:translate-y-0; }
+.chip { @apply inline-flex items-center rounded-full border border-ink/15 bg-white/70 px-3.5 py-1.5 text-sm font-medium; }
